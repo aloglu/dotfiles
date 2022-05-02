@@ -1,0 +1,42 @@
+# ~/.ticker.yaml
+show-summary: true
+show-tags: true
+show-fundamentals: true
+show-separator: true
+show-holdings: true
+interval: 5
+currency: TRY
+currency-summary-only: false
+sort: user
+watchlist:
+  - USDTRY=X
+  - EURTRY=X
+  - XU100.IS
+  - XU030.IS
+lots:
+  - symbol:
+    quantity:
+    unit_cost:
+groups:
+  - name: Stocks
+    watchlist:
+      - EREGL.IS
+      - OYAKC.IS
+      - HEKTS.IS
+    holdings:
+      - symbol: EREGL.IS
+        quantity: 10
+        unit_cost: 34.420
+      - symbol: OYAKC.IS
+        quantity: 10
+        unit_cost: 10.12
+      - symbol: "HEKTS.IS"
+        quantity: 8
+        unit_cost: 18.32
+#  - name: Indices
+#    watchlist:
+#      - XU030.IS
+#    holdings:
+#      - symbol: XU030.IS
+#        quantity: 3336
+#        unit_cost: 0.059568345
