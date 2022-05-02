@@ -121,4 +121,4 @@ alias spotify=ncspot
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-alias dotfiles='/usr/bin/git --git-dir=/$HOME/$USER/.dotfiles/ --work-tree=/home/kwyjibo'
+alias dotfiles='/usr/bin/git --git-dir=/$HOME/$USER/.dotfiles/ --work-tree=/$HOME/$USER'
