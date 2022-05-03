@@ -213,15 +213,15 @@ bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun,firefox-bookma
 bindsym $mod+g exec --no-startup-id $HOME/.config/rofi/scripts/web-search.sh
 
 ## Screenshot
-bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
-bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+bindsym Print exec --no-startup-id maim "$HOME/$USER/Pictures/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "$HOME/$USER/Pictures/$(date)"
 
 ## File Browser
 bindsym $mod+t exec nautilus
 
 #Customization
 ## Change Wallpaper Using a Random File in a Folder
-exec_always --no-startup-id feh --bg-fill --randomize ~/Pictures/Wallpapers
+exec_always --no-startup-id feh --bg-fill --randomize ~$HOME/Pictures/Wallpapers
 
 ## Set Keyboard Layout for English (US) and Turkish (TR-Q)
 exec_always setxkbmap -layout us,tr
