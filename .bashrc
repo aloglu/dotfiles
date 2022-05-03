@@ -61,4 +61,4 @@ function proml {
 # Call the fancy prompt function
 proml
 . "$HOME/.cargo/env"
-alias dotfiles='/usr/bin/git --git-dir=/$HOME/$USER/.dotfiles/ --work-tree=/$HOME/$USER'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
