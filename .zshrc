@@ -116,9 +116,16 @@ export EDITOR=codium
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Aliases
+## Plex Permissions
 alias plexperm="sudo chgrp plex /run/media/$USER && sudo chmod g+rX /run/media/$USER && sudo setfacl -m g:plex:rx /run/media/$USER"
+
+## ncspot
 alias spotify=ncspot
+
+# dotfiles
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

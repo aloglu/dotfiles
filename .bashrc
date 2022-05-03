@@ -26,12 +26,12 @@ fi
 
 unset rc
 
-# Helper function for our fancy prompt.
+# Helper function for our fancy prompt
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-# Fancy prompt function (stolen from a work buddy)
+# Prompt function
 function proml {
   local        BLUE="\[\033[0;34m\]"
   local  LIGHT_BLUE="\[\033[0;36m\]"
@@ -61,4 +61,7 @@ function proml {
 # Call the fancy prompt function
 proml
 . "$HOME/.cargo/env"
+
+# Aliases
+## dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
