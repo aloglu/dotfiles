@@ -66,7 +66,7 @@ echo ".dotfiles" >> .gitignore
 You can now safely clone your dotfiles into a bare repository.
 
 ```bash
-git clone --bare git-repo-url $HOME/.dotfiles
+git clone --bare https://github.com/aloglu/dotfiles $HOME/.dotfiles
 ```
 
 Define the alias for your `.dotfiles` folder.
