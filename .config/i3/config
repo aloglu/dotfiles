@@ -221,3 +221,4 @@ exec_always --no-startup-id feh --bg-fill --randomize ~$HOME/Pictures/Wallpapers
 
 ## Set Keyboard Layout for English (US) and Turkish (TR-Q)
 exec_always setxkbmap -layout us,tr
+exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
