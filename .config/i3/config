@@ -215,9 +215,9 @@ bindsym Shift+Print exec --no-startup-id maim --select "$HOME/$USER/Pictures/$(d
 ## File Browser
 bindsym $mod+t exec nautilus
 
-#Customization
+# Customization
 ## Change Wallpaper Using a Random File in a Folder
-exec_always --no-startup-id feh --bg-fill --randomize ~$HOME/Pictures/Wallpapers
+exec_always --no-startup-id feh --bg-fill --randomize $HOME/Pictures/Wallpapers
 
 ## Set Keyboard Layout for English (US) and Turkish (TR-Q)
 exec_always setxkbmap -layout us,tr
