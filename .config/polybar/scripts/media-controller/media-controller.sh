@@ -115,11 +115,14 @@ get_icon() {
     *firefox*)
         res=""
         ;;
-    *spotify*)
+    *mpv*)
+        res="喇"
+        ;;
+    *ncspot*)
         res=""
         ;;
-    *vlc*)
-        res="嗢"
+    *spotify*)
+        res=""
         ;;
     esac
     echo $res
