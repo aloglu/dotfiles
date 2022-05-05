@@ -11,7 +11,7 @@
 
 PARENT_BAR_PID=$(pgrep -a "polybar" | cut -d" " -f1)
 PLAYERS=($(playerctl -l 2>/dev/null))
-FORMAT="'{{ title }} - {{ artist }}'"
+FORMAT="'{{ artist }} - {{ title }}'"
 FORMAT_PROCESS="'{{ duration(position)}}/{{duration(mpris:length) }}'"
 PLAYER_STATUS=-1
 CUR_PLAYER=$(cat ~/.config/polybar/.curplayer.log)
