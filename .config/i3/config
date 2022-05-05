@@ -200,7 +200,7 @@ gaps bottom 40
 
 ## Startup Applications
 exec_always picom
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 exec autokey-gtk
 
 # Keybinds
