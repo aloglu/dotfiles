@@ -44,10 +44,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# Start a terminal
 bindsym $mod+Return exec alacritty
 
-# kill focused window
+# Start polkit-gnome
+exec autostart $HOME/usr/lib/polkit-1/polkit-agent-helper-1
+
+# Kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
