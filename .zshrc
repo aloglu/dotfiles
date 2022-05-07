@@ -84,7 +84,8 @@ plugins=(
   copypath
   sudo
   zsh-interactive-cd # Requires fzf
-  zsh-autosuggestions # Requires install
+  zsh-autosuggestions # https://github.com/zsh-users/zsh-autosuggestions
+  zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
