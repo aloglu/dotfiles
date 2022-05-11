@@ -125,10 +125,10 @@ alias plexperm="sudo chgrp plex /run/media/$USER && sudo chmod g+rX /run/media/$
 ## ncspot
 alias spotify=ncspot
 
-# dotfiles
+## dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-# Exa
+## Exa
 alias ls=exa
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
