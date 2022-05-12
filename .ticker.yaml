@@ -28,10 +28,10 @@ groups:
         quantity: 10
         unit_cost: 34.420
       - symbol: OYAKC.IS
-        quantity: 10
+        quantity: 20
         unit_cost: 10.12
-      - symbol: "HEKTS.IS"
-        quantity: 8
+      - symbol: HEKTS.IS
+        quantity: 10
         unit_cost: 18.32
 #  - name: Indices
 #    watchlist:
