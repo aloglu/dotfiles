@@ -25,14 +25,14 @@ groups:
       - HEKTS.IS
     holdings:
       - symbol: EREGL.IS
-        quantity: 10
-        unit_cost: 34.420
+        quantity: 15
+        unit_cost: 32.22
       - symbol: OYAKC.IS
         quantity: 20
-        unit_cost: 10.12
+        unit_cost: 11.70
       - symbol: HEKTS.IS
         quantity: 10
-        unit_cost: 18.32
+        unit_cost: 22.20
 #  - name: Indices
 #    watchlist:
 #      - XU030.IS
