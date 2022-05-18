@@ -1,0 +1,5 @@
+feh \
+    --no-fehbg \
+    --scale-down
+    --auto-zoom \
+    --auto-reload

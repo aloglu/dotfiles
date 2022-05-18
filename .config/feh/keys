@@ -1,0 +1,278 @@
+# feh keybindings configuration
+#
+# Syntax: <action> <key 1> [<key 2> [<key n...>]]
+#
+# <key> is the key returned from xorg-xev
+#
+# You can specify modifier key to use along with the key:
+#   C: Control key
+#   S: Shift key
+#   1: Mod1 key (Alt key)
+#   4: Mod4 key (Super—or also called Windows—key)
+#
+# Each modifier is followed by a hyphen, e.g: C-S-1 means Ctrl+Shift+LMB
+#
+# Writing <action> without <key> will unbind the mousebinding.
+#
+
+#
+# First we unbind all existing keybindings.
+#
+
+# Toggle actions display (see --draw-actions)
+toggle_actions
+
+# Toggle anti-aliasing
+toggle_aliasing
+
+# Toggle Caption entry mode. If --caption-path has been specified,
+# then this enables caption editing. The caption at the bottom of
+# the screen will turn yellow and can be edited. Hit Return to
+# confirm and save the caption, or escape to cancel editing.
+# Note that you can insert an actual newline into the caption
+# using ⟨Ctrl+return⟩.
+toggle_caption
+
+# Toggle filename display (see --draw-filename)
+toggle_filenames
+
+# (optional feature, not available in this build) Toggle EXIF tag display
+toggle_exif
+
+# Toggle fullscreen
+toggle_fullscreen
+
+# Enable/Disable automatic window resize when changing images
+toggle_fixed_geometry
+
+# Pause/Continue the slideshow. When paused, it will not
+# automatically change slides based on --slideshow-delay.
+toggle_pause
+
+# Toggle info display (see --info)
+toggle_info
+
+# Toggle zoom and viewport keeping. When enabled, feh will keep zoom
+# and X, Y offset when switching images.
+toggle_keep_vp
+
+# Save the current filelist as “feh_PID_ID_filelist”
+save_filelist
+
+# Show menu. Use the arrow keys and return to select items,
+# and ⟨escape⟩ to close the menu.
+toggle_menu
+
+# Show next image. Selects the next image in thumbnail mode.
+next_img
+
+# Toggle pointer visibility
+toggle_pointer
+
+# Show previous image. Selects the previous image in thumbnail mode.
+prev_img
+
+# Quit feh
+quit
+
+# Reload current image. Useful for webcams
+reload_image
+
+# Save the current image as “feh_PID_ID_FILENAME”
+save_image
+
+# Change window size to fit current image size (plus/minus zoom, if set). In
+# scale-down and fixed-geometry mode, this also updates the window size limits.
+size_to_image
+
+# Close current window
+close
+
+# Jump to a random position in the current filelist
+jump_random
+
+# Toggle auto-zoom.
+toggle_auto_zoom
+
+# Jump to the first image of the previous or next sequence of images sharing a
+# directory name in the current filelist. Use --sort dirname if you would like
+# to ensure that all images in a directory are grouped together.
+prev_dir
+next_dir
+
+# rotate the image 90 degrees clockwise/counter-clockwise.
+# When --edit is used, this also rotates the underlying image. Rotation is
+# lossless, but may create artifacts in some image corners when used with
+# JPEG images. Rotating in the reverse direction will make them go away.
+# See jpegtran(2) for more about lossless JPEG rotation.
+#
+# Note: feh assumes that this feature is used to normalize image orientation.
+# For JPEG images, it will unconditionally set the EXIF orientation tag to 1
+# (“0,0 is top left”) after every rotation. See jpegexiforient(1) for
+# details on how to change this flag.
+orient_1
+orient_3
+
+# Vertically flip image.
+# When --edit is used, this also flips the underlying image (see above).
+flip
+
+# Horizontally flip image.
+# When --edit is used, this also flips the underlying image (see above).
+mirror
+
+# Execute the corresponding action (0 = --action, 1 = --action1 etc.)
+action_0
+action_1
+action_2
+action_3
+action_4
+action_5
+action_6
+action_7
+action_8
+action_9
+
+# Show first image
+jump_first
+
+# Show last image
+jump_last
+
+# Go forward ~5% of the filelist
+jump_fwd
+
+# Go backward ~5% of the filelist
+jump_back
+
+# Increase reload delay by 1 second
+reload_plus
+
+# Decrease reload delay by 1 second
+reload_minus
+
+# Remove current file from filelist
+remove
+
+# Remove current file from filelist and delete it
+delete
+
+# Scroll to the left
+scroll_left
+
+# Scroll to the right
+scroll_right
+
+# Scroll up
+scroll_up
+
+# Scroll down. Note that the scroll keys work without anti-aliasing for
+# performance reasons; hit the render key after scrolling to anti-alias
+# the image.
+scroll_down
+
+# Scroll to the left by one page
+scroll_left_page
+
+# Scroll to the right by one page
+scroll_right_page
+
+# Scroll up by one page
+scroll_up_page
+
+# Scroll down by one page
+scroll_down_page
+
+# Anti-alias the image. Opens the currently selected image in thumbnail mode.
+render
+
+# Zoom in
+zoom_in
+
+# Zoom out
+zoom_out
+
+# Zoom to 100%
+zoom_default
+
+# Zoom to fit the window size
+zoom_fit
+
+# Zoom to fill the window size like --bg-fill
+zoom_fill
+
+# Close the menu
+menu_close
+
+# Highlight previous menu item
+menu_up
+
+# Highlight next menu item
+menu_down
+
+# Highlight parent menu item
+menu_parent
+
+# Highlight child menu item
+menu_child
+
+# Select highlighted menu item
+menu_select
+
+#
+# Then we add just what we use
+#
+
+# Use 'f' to toggle fullscreen
+toggle_fullscreen f
+
+# Use the Space key to pause and continue slideshow
+toggle_pause space
+
+# Use 'a'/'d' and Left/Right to show previous/next image.
+prev_img a Left
+next_img d Right
+
+# Use '1' and '2' to jump to first and last image
+jump_first 1
+jump_last 2
+
+# Reload using 'r'
+reload_image C-r
+
+# Quit using q
+quit q
+
+# Close window using Ctrl-W
+close C-w
+
+# Resize window to match image size using w
+size_to_image w
+
+# Flip using 'F' (i,e: Shift + 'f' key).
+# I only use Shift modifier for transformations.
+flip F
+
+# Mirror using 'M' (i,e: Shift + 'm' key).
+# I only use Shift modifier for transformations.
+mirror M
+
+# Rotate clockwise using '>' (i.e: Shift and '.' key) and
+# counter clockwise using < (i.e: Shift and ',' key).
+# I only use Shift modifier for transformations.
+orient_1 greater
+orient_3 less
+
+# Delete current image using Del
+delete Delete
+
+# Ctrl with '-' and '=' key to zoom out and in (the '+' sign is on the
+# same key as the '=' sign, so I chose this)
+zoom_in C-equal
+zoom_out C-minus
+
+# Reset zoom to 100% using Ctrl with 0
+zoom_default C-0
+
+# Zoom to fit the window with the 'z' key
+zoom_fit z
