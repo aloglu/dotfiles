@@ -207,7 +207,7 @@ exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 
 # Keybinds
 ## Rofi
-bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun,firefox-bookmarks:~/.config/rofi/scripts/firefox-bookmarks.sh -modi combi -show combi -show-icons"
+bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun,firefox-bookmarks:~/.config/rofi/scripts/firefox-bookmarks.sh,emoji:~/.config/rofi/scripts/emoji.sh -modi combi -show combi -show-icons"
 bindsym $mod+g exec --no-startup-id $HOME/.config/rofi/scripts/web-search.sh
 
 ## Screenshot
