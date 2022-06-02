@@ -188,7 +188,7 @@ bindsym $mod+r mode "resize"
 
 # System
 ## Colors
-set $bg-color 	         #F0C674
+set $bg-color	         #F0C674
 set $inactive-bg-color   #2C2C2C
 set $text-color          #F3F4F5
 set $inactive-text-color #676E7D
@@ -224,8 +224,8 @@ bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun,firefox-bookma
 bindsym $mod+g exec --no-startup-id $HOME/.config/rofi/scripts/web-search.sh
 
 ## Screenshot
-bindsym Print exec --no-startup-id maim "$HOME/Pictures/Screenshots/$(date)"
-bindsym Shift+Print exec --no-startup-id maim --select "$HOME/Pictures/Screenshots/$(date)"
+bindsym Print exec --no-startup-id maim "$HOME/Pictures/Screenshots/$(date).png"
+bindsym Shift+Print exec --no-startup-id maim --select "$HOME/Pictures/Screenshots/$(date).png"
 
 ## File Browser
 bindsym $mod+t exec nautilus
