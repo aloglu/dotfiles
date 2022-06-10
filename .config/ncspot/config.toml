@@ -4,6 +4,7 @@
 
 notify = true
 flip_status_indicators = true
+use_nerdfont = true
 
 [keybindings]
 # Song controls
