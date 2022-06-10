@@ -60,9 +60,9 @@ function proml {
 
 # Call the fancy prompt function
 proml
-. "$HOME/.cargo/env"
 
 # Aliases
 ## dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+. "$HOME/.cargo/env"
