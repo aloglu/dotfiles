@@ -2,9 +2,10 @@
 # My Preferences #
 ##################
 
-notify = true
+notify = false
 flip_status_indicators = true
 use_nerdfont = true
+album_column = true
 
 [keybindings]
 # Song controls
