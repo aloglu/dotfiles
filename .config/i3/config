@@ -205,7 +205,7 @@ exec --no-startup-id xset -dpms
 exec --no-startup-id xset s noblank
 
 ## Border Settings 
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 0
 hide_edge_borders smart # Hides the border when there's only one active window
 
 ## Add Gap in Relation to Other Windows
