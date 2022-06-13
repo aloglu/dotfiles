@@ -105,8 +105,3 @@ https://web.archive.org/web/20220429071157/https://news.ycombinator.com/item?id=
 https://web.archive.org/web/20220417080228/https://www.atlassian.com/git/tutorials/dotfiles
 https://web.archive.org/web/20220502140347/https://bitbucket.org/durdn/cfg/raw/master/.bin/install.sh
 -->
-
-# Screenshot
-I try not to change the default configs if I can help it, but since these settings *do* have a visual affect, it might be better than not to have a screenshot to give you an idea what these files will make your system look like. Here's my boringly simple setup:
-
-![](Screenshot.png)
