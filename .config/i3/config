@@ -237,7 +237,7 @@ exec_always --no-startup-id feh --bg-fill --randomize $HOME/Pictures/Wallpapers
 
 ## Set Keyboard Layout for English (US) and Turkish (TR-Q)
 exec_always setxkbmap -layout us,tr
-exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
+exec_always setxkbmap -option 'grp:alt_shift_toggle'
 
 ## Floating Windows
 # for_window [class="1Password"] floating enable, resize set 1200 750, move scratchpad, border pixel 0
