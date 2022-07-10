@@ -213,7 +213,7 @@ hide_edge_borders smart # Hides the border when there's only one active window
 gaps inner 15
 
 ## Add Gap in Relation to Screen
-gaps bottom 40
+gaps bottom 30
 
 ## Startup Applications
 exec_always picom
