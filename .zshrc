@@ -131,6 +131,9 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ## Exa
 alias ls=exa
 
+## Mouse Speed
+alias mouse-speed='xinput set-prop 15 184 0.4 0 0 0 0.4 0 0 0 1.6'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
