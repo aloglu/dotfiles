@@ -218,6 +218,7 @@ gaps bottom 30
 ## Startup Applications
 exec_always picom
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
+exec_always xinput set-prop "Logitech G400s Optical Gaming Mouse" "Coordinate Transformation Matrix" 0.4 0 0 0 0.4 0 0 0 1.6
 
 # Keybinds
 ## Rofi
