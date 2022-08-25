@@ -91,7 +91,7 @@ show_menu_selector() {
         options="${options}${t} ${i}*"
     done
     options="${options} Exit"
-    menu="$(rofi -sep "*" -dmenu -i -p "Choose Player" -location 0 -hide-scrollbar -line-padding 4 -padding 20 <<<${options})" # Removed the following after update: -kb-row-select "Tab" -kb-row-tab "". Add before <<<${options} if necessary.
+    menu="$(rofi -sep "*" -dmenu -i -p "Choose Player" -location 0 -hide-scrollbar -line-padding 4 -padding 20 <<<${options})" # Removed the following after an update: -kb-row-select "Tab" -kb-row-tab "". Add it before <<<${options} if necessary.
     menu=${menu:2}
     if [ menu == "Exit" ]; then
         return
