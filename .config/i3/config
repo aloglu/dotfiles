@@ -230,7 +230,7 @@ bindsym Print exec --no-startup-id maim "$HOME/Pictures/Screenshots/$(date).png"
 bindsym Shift+Print exec --no-startup-id maim --select "$HOME/Pictures/Screenshots/$(date).png"
 
 ## File Browser
-bindsym $mod+t exec nautilus
+bindsym $mod+t exec thunar
 
 # Customization
 ## Change Wallpaper Using a Random File in a Folder
