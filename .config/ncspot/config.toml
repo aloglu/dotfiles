@@ -6,6 +6,7 @@ notify = false
 flip_status_indicators = true
 use_nerdfont = true
 album_column = true
+shuffle = true
 
 [keybindings]
 # Song controls
