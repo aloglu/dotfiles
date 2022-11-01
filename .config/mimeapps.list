@@ -4,6 +4,7 @@ image/jpeg=feh.desktop
 image/bmp=feh.desktop
 image/webp=feh.desktop
 inode/directory=thunar.desktop
+video/x-matroska=io.mpv.Mpv.desktop
 
 [Added Associations]
 image/png=feh.desktop;
@@ -13,3 +14,6 @@ image/webp=feh.desktop;
 image/svg+xml=feh.desktop;
 text/css=codium.desktop;
 inode/directory=thunar.desktop;
+video/x-matroska=io.mpv.Mpv.desktop;
+text/plain=codium.desktop;
+video/mp4=io.mpv.Mpv.desktop;
