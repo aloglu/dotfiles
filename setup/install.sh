@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Import variables
-. ./src/div.sh
 . ./src/var.sh
+. ./src/colors.sh
 
 # Options
 echo -e "\n\033[${BIWhite}What would you like to install?\033[0m\n"
