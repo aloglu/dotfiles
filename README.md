@@ -10,7 +10,7 @@ These files are for my own use. I try to keep things as vanilla as possible exce
 - use similar apps.
 
 # Method
-I've tried [GNU Stow](https://www.gnu.org/software/stow) and [chezmoi](chezmoi.io) before but they were overly complicated for what they're trying to accomplish. They also both required installing additional software. I wanted to avoid this because my needs are not complex. So I opted in for a solution I serendipitously came across on [Hacker News](https://news.ycombinator.com/item?id=11071754) and [Atlassian's documentation](https://www.atlassian.com/git/tutorials/dotfiles). 
+I've tried [GNU Stow](https://www.gnu.org/software/stow) and [chezmoi](https://www.chezmoi.io/) before but they were overly complicated for what they're trying to accomplish. They also both required installing additional software. I wanted to avoid this because my needs are not complex. So I opted in for a solution I serendipitously came across on [Hacker News](https://news.ycombinator.com/item?id=11071754) and [Atlassian's documentation](https://www.atlassian.com/git/tutorials/dotfiles). 
 
 The only software this method requires is git. In short, you create a bare git repository in your `$HOME`, then add your dotfiles files for versioning.
 
