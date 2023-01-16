@@ -155,44 +155,8 @@ body:hover #tablist-wrapper .tab-title-wrapper {
 
 Paste above into Tab Center Reborn's settings */
 
-/* Hide Folder Icons from Bookmark Menu */
-.bookmark-item[container] > .toolbarbutton-icon {
-  display: none !important;
-}
-
 /* Reduce the Height of Bookmark Menu Folder Items */
 #PlacesToolbar menuitem,
 #PlacesToolbar menu {
   padding: 2px 8px !important;
-}
-
-/* Active/Passive Tab Indicator */
-/* Set size and position of the bar relative to background */
-.tab-background::before {
-  content: "";
-  display: block;
-  height: 2px;
-  margin: 0px 7px 0;
-}
-
-/* Set color for active tab */
-.tabbrowser-tab[selected] .tab-background::before {
-  background-color: #838383;
-}
-
-/* Set color for other selected tabs */
-.tabbrowser-tab[multiselected]:not([selected]) .tab-background::before {
-  background-color: color-mix(in srgb, #838383 66%, transparent);
-}
-
-/* Set color for hovering on non-active/non-selected tabs */
-.tabbrowser-tab:not([selected], [multiselected]):hover .tab-background::before {
-  background-color: color-mix(in srgb, currentColor 33%, transparent);
-  transform: none;
-}
-
-/* [Optional] Animation when hovering non-active/non-selected tabs */
-.tabbrowser-tab:not([selected], [multiselected]) .tab-background::before {
-  transform: scaleX(.8);
-  transition: transform 100ms linear;
 }
