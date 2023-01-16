@@ -232,8 +232,8 @@ bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun,firefox-bookma
 bindsym $mod+g exec --no-startup-id "$HOME/.config/rofi/scripts/web-search.sh"
 
 ## Screenshot
-bindsym Print exec --no-startup-id maim "$HOME/Pictures/Screenshots/$(date).png"
-bindsym Shift+Print exec --no-startup-id maim --select "$HOME/Pictures/Screenshots/$(date).png"
+bindsym Print exec "maim --hidecursor ~/Pictures/$(date +%Y-%b-%d--%H-%M-%S_maim | tr A-Z a-z).png; i3-nagbar --message 'Screenshot created' --type warning & sleep 3; pkill i3-nagbar"
+bindsym Shift+Print exec "maim --hidecursor --select ~/Pictures/$(date +%Y-%b-%d--%H-%M-%S_maim | tr A-Z a-z).png; i3-nagbar --message 'Screenshot created' --type warning & sleep 3; pkill i3-nagbar"
 
 ## File Browser
 bindsym $mod+t exec thunar
