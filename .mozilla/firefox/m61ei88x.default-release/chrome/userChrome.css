@@ -155,28 +155,18 @@ body:hover #tablist-wrapper .tab-title-wrapper {
 
 Paste above into Tab Center Reborn's settings */
 
-/* ============ */
-/* My Additions */
-/* ============ */
-
-/* ==================================== */
 /* Hide Folder Icons from Bookmark Menu */
-/* ==================================== */
 .bookmark-item[container] > .toolbarbutton-icon {
   display: none !important;
 }
 
-/* =============================================== */
 /* Reduce the Height of Bookmark Menu Folder Items */
-/* =============================================== */
 #PlacesToolbar menuitem,
 #PlacesToolbar menu {
   padding: 2px 8px !important;
 }
 
-/* ============================ */
 /* Active/Passive Tab Indicator */
-/* ============================ */
 /* Set size and position of the bar relative to background */
 .tab-background::before {
   content: "";
