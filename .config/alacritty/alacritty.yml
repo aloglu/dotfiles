@@ -1,12 +1,43 @@
----
 env:
   TERM: alacritty
+  SHELL: zsh
 
-import:
-  - ~/.config/alacritty/themes/ayu_dark.yaml
+# import:
+#  - ~/.config/alacritty/themes/base16_default_dark.yaml
+
+colors:
+  name: Cloud
+  author: ""
+  primary:
+    background: "#29272E"
+    foreground: "#ffffff"
+  cursor:
+    text: "#000000"
+    cursor: "#ffffff"
+  normal:
+    black: "#222827"
+    red: "#d5a8e3"
+    green: "#9c75dd"
+    yellow: "#9898ae"
+    blue: "#654a96"
+    magenta: "#625566"
+    cyan: "#a9d1df"
+    white: "#e6ebe5"
+    black: "#5d6f74"
+    red: "#cd749c"
+    green: "#63b0b0"
+    yellow: "#c0c0dd"
+    blue: "#5786bc"
+    magenta: "#3f3442"
+    cyan: "#849da2"
+    white: "#d9d6cf"
 
 window:
   opacity: 1.0
+  padding:
+   x: 25
+   y: 25
+   dynamic_padding: true
   title: Alacritty
   dynamic_title: true
   class:
@@ -37,9 +68,9 @@ selection:
 
 cursor:
   style:
-    shape: Beam
+    shape: Block
     blinking: Always
-  unfocused_hollow: false
+    unfocused_hollow: true
 
 shell:
   program: /bin/zsh
@@ -47,3 +78,6 @@ shell:
 key_bindings:
   - {key: Y, mods: Control, action: Paste}
   - {key: W, mods: Alt, action: Copy}
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }

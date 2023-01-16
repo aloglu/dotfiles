@@ -188,7 +188,7 @@ bindsym $mod+r mode "resize"
 
 # System
 ## Colors
-set $bg-color	         #F0C674
+set $bg-color	         #7B58DC
 set $inactive-bg-color   #2C2C2C
 set $text-color          #F3F4F5
 set $inactive-text-color #676E7D
@@ -205,7 +205,7 @@ exec --no-startup-id xset -dpms
 exec --no-startup-id xset s noblank
 
 ## Border Settings 
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 0
 for_window [class="mpv"] border none
 hide_edge_borders smart # Hides the border when there's only one active window
 
@@ -218,13 +218,18 @@ gaps bottom 30
 ## Startup Applications
 exec_always picom
 exec_always xset s off -dpms
-exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
+exec_always --no-startup-id "$HOME/.config/polybar/scripts/launch.sh"
+# exec_always --no-startup-id "cd $HOME/.config/xborders && ./xborders --config config.json" # Workaround
 exec_always xinput set-prop "Logitech G400s Optical Gaming Mouse" "Coordinate Transformation Matrix" 0.4 0 0 0 0.4 0 0 0 1.6
 
 # Keybinds
+## i3
+bindsym Control+$mod+Left workspace prev
+bindsym Control+$mod+Right workspace next
+
 ## Rofi
 bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun,firefox-bookmarks:~/.config/rofi/scripts/firefox-bookmarks.sh,emoji:~/.config/rofi/scripts/emoji.sh -modi combi -show combi -show-icons"
-bindsym $mod+g exec --no-startup-id $HOME/.config/rofi/scripts/web-search.sh
+bindsym $mod+g exec --no-startup-id "$HOME/.config/rofi/scripts/web-search.sh"
 
 ## Screenshot
 bindsym Print exec --no-startup-id maim "$HOME/Pictures/Screenshots/$(date).png"
@@ -235,11 +240,14 @@ bindsym $mod+t exec thunar
 
 # Customization
 ## Change Wallpaper Using a Random File in a Folder
-exec_always --no-startup-id feh --bg-fill --randomize $HOME/Pictures/Wallpapers
+exec_always --no-startup-id feh --bg-fill --randomize "$HOME/Pictures/Wallpapers"
 
 ## Set Keyboard Layout for English (US) and Turkish (TR-Q)
 exec_always setxkbmap -layout us,tr
-exec_always setxkbmap -option 'grp:alt_shift_toggle'
+exec_always setxkbmap -option "grp:alt_shift_toggle"
 
 ## Floating Windows
 # for_window [class="1Password"] floating enable, resize set 1200 750, move scratchpad, border pixel 0
+
+# Automatic back-and-forth when switching to the current workspace
+workspace_auto_back_and_forth yes
